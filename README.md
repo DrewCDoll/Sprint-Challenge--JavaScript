@@ -28,15 +28,39 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
+
+
 1. Describe the biggest difference between `.forEach` & `.map`.
+
+.forEach returns nothing. It acts on the existing array and does not create a new array. It loops through an array calling a function on each object of the array.  .map create a new array as it loops through the base array, calling a function on each item in the base array.
+
 
 2. What is the difference between a function and a method?
 
+A function is a piece of code that does something that can be called by name, passed arguments that it can act upon, and may or may not return objects, variables, and/or values.
+A method is a function-like piece of code attached to an object. 
+
+
 3. What is closure?
+
+Closure refers to the relationship between a function and its outer (either global or an outside function) environment. This is refered to as the lexical environment. This is critical because it determines what variables and objects a function has access to. Closure are used in many cases to provide data privacy to objects. Closure also determines what can be shared between sibling functions written within the same scope. 
 
 4. Describe the four rules of the 'this' keyword.
 
+a. Global Object Binding - In the global scope "this" refers to the window / console object.
+
+b. Implicit Binding - When a function is called with a dot the object preceeding the dot is "this".
+
+c. New Binding - When the "new" keyword is used "this" refers to the specific instance of the object created by the constructor function.
+
+d. Explicit Binding - When JavaScript's call, apply or bind methods are used "this" is explicitly defined by the method.  
+
+
 5. Why do we need super() in an extended class?
+
+super() passes the attributes of the child function back up to the constructor object of the parent class being extended. 
+
+
 
 ## Project Set up
 
